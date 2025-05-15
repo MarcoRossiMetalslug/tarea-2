@@ -1,0 +1,60 @@
+* /*uso de forma general*/{
+    margin: 0; /*es el espacio exterior que se deja alrededor de un elemento*/
+    padding: 0; /*separa el contenido del borde del mismo elemento*/
+    box-sizing: border-box; /*calcula el tamaño total de un elemento ancho u alto*/
+    --color1:#07B0F2; /*clasificacion del color azul*/
+    --color2:#05C7F2; /*clasificacion del color celeste*/
+    --color3:#F2C029; /*clasificacion del color naranja*/
+    --color4:#F2AE2E; /*clasificacion del color mostaza*/
+    --color5:#F2F2F2; /*clasificacion del color blanco*/
+
+}
+
+main{ /*estructura completa del esquema*/
+    width: 800px; /*determina el ancho del elemento*/
+
+    margin:20px auto; /*es el espacio exterior que se deja alrededor de un elemento*/
+}
+#cabecera{ /*parte superior del esquema*/
+    display: flex; /*determina cómo se comporta visualmente un elemento*/
+    flex-direction: row; /*definir la dirección en la que los elementos dentro de un flexbox*/
+    justify-content: space-between; /*para alinear los elementos en la dirección principal*/
+    align-items: center; /*controla cómo se alinean los elementos de un contenedor a lo largo de un eje vertical u horizontal*/
+    background-color: var(--color1); /*color de fondo*/
+    padding: 10px;/*separa el contenido del borde del mismo elemento*/
+    margin: 5px;/*es el espacio exterior que se deja alrededor de un elemento*/
+}
+#menu{ 
+    display: flex;/*determina cómo se comporta visualmente un elemento*/
+    flex-direction: row;/*definir la dirección en la que los elementos dentro de un flexbox*/
+    justify-content: right;/*para alinear los elementos en la dirección principal*/
+    margin: 5px;/*es el espacio exterior que se deja alrededor de un elemento*/
+} 
+#menu div{
+    padding: 10px;/*separa el contenido del borde del mismo elemento*/
+}
+#contenido{
+    display: flex;/*determina cómo se comporta visualmente un elemento*/
+    flex-direction: row;/*definir la dirección en la que los elementos dentro de un flexbox*/
+    justify-content: space-between;/*para alinear los elementos en la dirección principal*/
+    margin: 5px;/*es el espacio exterior que se deja alrededor de un elemento*/
+}
+.contenido{
+    margin:5px;/*es el espacio exterior que se deja alrededor de un elemento*/
+    padding: 10px;/*separa el contenido del borde del mismo elemento*/
+    border: 2px solid var(--color3); /*agregar bordes a los elementos*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*tipo de fuente que se utiliza en el texto*/
+}
+h3{
+    text-align: center; /*alinear el texto dentro de un contenedor*/
+    color: var(--color4); /*tonalidad del color en su mismo eje*/
+    background-color: var(--color5);/*color de fondo*/
+}
+#pie{
+    display: flex;/*determina cómo se comporta visualmente un elemento*/
+    flex-direction: row;/*definir la dirección en la que los elementos dentro de un flexbox*/
+    justify-content: center;/*para alinear los elementos en la dirección principal*/
+    background-color: var(--color1);/*color de fondo*/
+}
+
+
